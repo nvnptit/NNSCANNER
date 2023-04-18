@@ -7,15 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A7BF392AEC15FC42DB50003 /* Pods_NNSCANNERTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA07D9A791145496659F0B40 /* Pods_NNSCANNERTests.framework */; };
+		741DBCCA07E2F1D64DBF19C6 /* Pods_NNSCANNER_NNSCANNERUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB6619B90949C54770A14062 /* Pods_NNSCANNER_NNSCANNERUITests.framework */; };
+		792E5E2129ED9A690022404B /* WeScan in Frameworks */ = {isa = PBXBuildFile; productRef = 792E5E2029ED9A690022404B /* WeScan */; };
+		795C21BA29ED7D7A00700E21 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795C21B829ED7D7A00700E21 /* HomeViewController.swift */; };
+		795C21BB29ED7D7A00700E21 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 795C21B929ED7D7A00700E21 /* HomeViewController.xib */; };
+		795C21BD29ED94A100700E21 /* HomeTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795C21BC29ED94A100700E21 /* HomeTabBar.swift */; };
+		795C21C029ED94E400700E21 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795C21BF29ED94E400700E21 /* UIColor.swift */; };
+		795C21C529ED95EF00700E21 /* RecentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795C21C329ED95EF00700E21 /* RecentViewController.swift */; };
+		795C21C629ED95EF00700E21 /* RecentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 795C21C429ED95EF00700E21 /* RecentViewController.xib */; };
+		795C21C929ED960E00700E21 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795C21C729ED960E00700E21 /* ScanViewController.swift */; };
+		795C21CA29ED960E00700E21 /* ScanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 795C21C829ED960E00700E21 /* ScanViewController.xib */; };
+		795C2B5D29EE358D003A8B1D /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795C2B5C29EE358D003A8B1D /* PDFViewController.swift */; };
+		795C2B6029EE4069003A8B1D /* ExportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795C2B5F29EE4069003A8B1D /* ExportViewController.swift */; };
+		795C2B6229EE4B3F003A8B1D /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795C2B6129EE4B3F003A8B1D /* UIImage.swift */; };
+		795C2B6429EE4B7C003A8B1D /* CGSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795C2B6329EE4B7C003A8B1D /* CGSize.swift */; };
 		79E6D92729ED3BBE00530CD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E6D92629ED3BBE00530CD2 /* AppDelegate.swift */; };
 		79E6D92929ED3BBE00530CD2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E6D92829ED3BBE00530CD2 /* SceneDelegate.swift */; };
-		79E6D92B29ED3BBE00530CD2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E6D92A29ED3BBE00530CD2 /* ViewController.swift */; };
-		79E6D92E29ED3BBE00530CD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79E6D92C29ED3BBE00530CD2 /* Main.storyboard */; };
 		79E6D93029ED3BBF00530CD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79E6D92F29ED3BBF00530CD2 /* Assets.xcassets */; };
 		79E6D93329ED3BBF00530CD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79E6D93129ED3BBF00530CD2 /* LaunchScreen.storyboard */; };
 		79E6D93E29ED3BBF00530CD2 /* NNSCANNERTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E6D93D29ED3BBF00530CD2 /* NNSCANNERTests.swift */; };
 		79E6D94829ED3BBF00530CD2 /* NNSCANNERUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E6D94729ED3BBF00530CD2 /* NNSCANNERUITests.swift */; };
 		79E6D94A29ED3BBF00530CD2 /* NNSCANNERUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E6D94929ED3BBF00530CD2 /* NNSCANNERUITestsLaunchTests.swift */; };
+		E3B957230FFF04274369A4B0 /* Pods_NNSCANNER.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D2BDAD5C33D085D18DBFC0 /* Pods_NNSCANNER.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +50,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D809DD03611B0280250B674 /* Pods-NNSCANNER-NNSCANNERUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NNSCANNER-NNSCANNERUITests.release.xcconfig"; path = "Target Support Files/Pods-NNSCANNER-NNSCANNERUITests/Pods-NNSCANNER-NNSCANNERUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4BC67D627BD05F1E2ADFC618 /* Pods-NNSCANNERTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NNSCANNERTests.debug.xcconfig"; path = "Target Support Files/Pods-NNSCANNERTests/Pods-NNSCANNERTests.debug.xcconfig"; sourceTree = "<group>"; };
+		57FCCB561FF193523960A6CF /* Pods-NNSCANNER.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NNSCANNER.debug.xcconfig"; path = "Target Support Files/Pods-NNSCANNER/Pods-NNSCANNER.debug.xcconfig"; sourceTree = "<group>"; };
+		795C21B829ED7D7A00700E21 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		795C21B929ED7D7A00700E21 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		795C21BC29ED94A100700E21 /* HomeTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBar.swift; sourceTree = "<group>"; };
+		795C21BF29ED94E400700E21 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		795C21C329ED95EF00700E21 /* RecentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentViewController.swift; sourceTree = "<group>"; };
+		795C21C429ED95EF00700E21 /* RecentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecentViewController.xib; sourceTree = "<group>"; };
+		795C21C729ED960E00700E21 /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		795C21C829ED960E00700E21 /* ScanViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScanViewController.xib; sourceTree = "<group>"; };
+		795C2B5C29EE358D003A8B1D /* PDFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
+		795C2B5F29EE4069003A8B1D /* ExportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportViewController.swift; sourceTree = "<group>"; };
+		795C2B6129EE4B3F003A8B1D /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		795C2B6329EE4B7C003A8B1D /* CGSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGSize.swift; sourceTree = "<group>"; };
 		79E6D92329ED3BBE00530CD2 /* NNSCANNER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NNSCANNER.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79E6D92629ED3BBE00530CD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79E6D92829ED3BBE00530CD2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		79E6D92A29ED3BBE00530CD2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		79E6D92D29ED3BBE00530CD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		79E6D92F29ED3BBF00530CD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79E6D93229ED3BBF00530CD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79E6D93429ED3BBF00530CD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +76,12 @@
 		79E6D94329ED3BBF00530CD2 /* NNSCANNERUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NNSCANNERUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79E6D94729ED3BBF00530CD2 /* NNSCANNERUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NNSCANNERUITests.swift; sourceTree = "<group>"; };
 		79E6D94929ED3BBF00530CD2 /* NNSCANNERUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NNSCANNERUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		813B402C67CCD02CADDF377E /* Pods-NNSCANNER-NNSCANNERUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NNSCANNER-NNSCANNERUITests.debug.xcconfig"; path = "Target Support Files/Pods-NNSCANNER-NNSCANNERUITests/Pods-NNSCANNER-NNSCANNERUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BEA88D0802DD027C438B99D2 /* Pods-NNSCANNERTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NNSCANNERTests.release.xcconfig"; path = "Target Support Files/Pods-NNSCANNERTests/Pods-NNSCANNERTests.release.xcconfig"; sourceTree = "<group>"; };
+		D96D7388E1139B445C57737B /* Pods-NNSCANNER.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NNSCANNER.release.xcconfig"; path = "Target Support Files/Pods-NNSCANNER/Pods-NNSCANNER.release.xcconfig"; sourceTree = "<group>"; };
+		DB6619B90949C54770A14062 /* Pods_NNSCANNER_NNSCANNERUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NNSCANNER_NNSCANNERUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2D2BDAD5C33D085D18DBFC0 /* Pods_NNSCANNER.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NNSCANNER.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA07D9A791145496659F0B40 /* Pods_NNSCANNERTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NNSCANNERTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +89,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3B957230FFF04274369A4B0 /* Pods_NNSCANNER.framework in Frameworks */,
+				792E5E2129ED9A690022404B /* WeScan in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A7BF392AEC15FC42DB50003 /* Pods_NNSCANNERTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +106,82 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				741DBCCA07E2F1D64DBF19C6 /* Pods_NNSCANNER_NNSCANNERUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13ACCF0840608A505B029B8E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				57FCCB561FF193523960A6CF /* Pods-NNSCANNER.debug.xcconfig */,
+				D96D7388E1139B445C57737B /* Pods-NNSCANNER.release.xcconfig */,
+				813B402C67CCD02CADDF377E /* Pods-NNSCANNER-NNSCANNERUITests.debug.xcconfig */,
+				2D809DD03611B0280250B674 /* Pods-NNSCANNER-NNSCANNERUITests.release.xcconfig */,
+				4BC67D627BD05F1E2ADFC618 /* Pods-NNSCANNERTests.debug.xcconfig */,
+				BEA88D0802DD027C438B99D2 /* Pods-NNSCANNERTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3170682547594707218CFD49 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2D2BDAD5C33D085D18DBFC0 /* Pods_NNSCANNER.framework */,
+				DB6619B90949C54770A14062 /* Pods_NNSCANNER_NNSCANNERUITests.framework */,
+				EA07D9A791145496659F0B40 /* Pods_NNSCANNERTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		795C21B729ED7D6600700E21 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				795C21B829ED7D7A00700E21 /* HomeViewController.swift */,
+				795C21B929ED7D7A00700E21 /* HomeViewController.xib */,
+				795C21BC29ED94A100700E21 /* HomeTabBar.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		795C21BE29ED94D100700E21 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				795C21BF29ED94E400700E21 /* UIColor.swift */,
+				795C2B6129EE4B3F003A8B1D /* UIImage.swift */,
+				795C2B6329EE4B7C003A8B1D /* CGSize.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		795C21C129ED94FF00700E21 /* Recent */ = {
+			isa = PBXGroup;
+			children = (
+				795C21C329ED95EF00700E21 /* RecentViewController.swift */,
+				795C21C429ED95EF00700E21 /* RecentViewController.xib */,
+			);
+			path = Recent;
+			sourceTree = "<group>";
+		};
+		795C21C229ED950900700E21 /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+				795C21C729ED960E00700E21 /* ScanViewController.swift */,
+				795C21C829ED960E00700E21 /* ScanViewController.xib */,
+			);
+			path = Scan;
+			sourceTree = "<group>";
+		};
+		795C2B5E29EE4054003A8B1D /* Export */ = {
+			isa = PBXGroup;
+			children = (
+				795C2B5F29EE4069003A8B1D /* ExportViewController.swift */,
+			);
+			path = Export;
+			sourceTree = "<group>";
+		};
 		79E6D91A29ED3BBE00530CD2 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +189,8 @@
 				79E6D93C29ED3BBF00530CD2 /* NNSCANNERTests */,
 				79E6D94629ED3BBF00530CD2 /* NNSCANNERUITests */,
 				79E6D92429ED3BBE00530CD2 /* Products */,
+				13ACCF0840608A505B029B8E /* Pods */,
+				3170682547594707218CFD49 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,12 +207,12 @@
 		79E6D92529ED3BBE00530CD2 /* NNSCANNER */ = {
 			isa = PBXGroup;
 			children = (
-				79E6D92629ED3BBE00530CD2 /* AppDelegate.swift */,
-				79E6D92829ED3BBE00530CD2 /* SceneDelegate.swift */,
-				79E6D92A29ED3BBE00530CD2 /* ViewController.swift */,
-				79E6D92C29ED3BBE00530CD2 /* Main.storyboard */,
-				79E6D92F29ED3BBF00530CD2 /* Assets.xcassets */,
-				79E6D93129ED3BBF00530CD2 /* LaunchScreen.storyboard */,
+				79E6D95B29ED3C2D00530CD2 /* Base */,
+				79E6D95A29ED3C2800530CD2 /* Feature */,
+				79E6D95929ED3C2300530CD2 /* Model */,
+				79E6D95829ED3C1B00530CD2 /* Resource */,
+				79E6D95729ED3C0F00530CD2 /* Service */,
+				79E6D95629ED3C0600530CD2 /* Utils */,
 				79E6D93429ED3BBF00530CD2 /* Info.plist */,
 			);
 			path = NNSCANNER;
@@ -127,6 +235,58 @@
 			path = NNSCANNERUITests;
 			sourceTree = "<group>";
 		};
+		79E6D95629ED3C0600530CD2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				795C21BE29ED94D100700E21 /* Extension */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		79E6D95729ED3C0F00530CD2 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		79E6D95829ED3C1B00530CD2 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				79E6D92F29ED3BBF00530CD2 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		79E6D95929ED3C2300530CD2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		79E6D95A29ED3C2800530CD2 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				795C2B5E29EE4054003A8B1D /* Export */,
+				795C21B729ED7D6600700E21 /* Home */,
+				795C21C229ED950900700E21 /* Scan */,
+				795C21C129ED94FF00700E21 /* Recent */,
+				795C2B5C29EE358D003A8B1D /* PDFViewController.swift */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		79E6D95B29ED3C2D00530CD2 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				79E6D92629ED3BBE00530CD2 /* AppDelegate.swift */,
+				79E6D92829ED3BBE00530CD2 /* SceneDelegate.swift */,
+				79E6D93129ED3BBF00530CD2 /* LaunchScreen.storyboard */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,6 +294,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79E6D94D29ED3BBF00530CD2 /* Build configuration list for PBXNativeTarget "NNSCANNER" */;
 			buildPhases = (
+				A147C486635D9436C4BF8F9F /* [CP] Check Pods Manifest.lock */,
 				79E6D91F29ED3BBE00530CD2 /* Sources */,
 				79E6D92029ED3BBE00530CD2 /* Frameworks */,
 				79E6D92129ED3BBE00530CD2 /* Resources */,
@@ -143,6 +304,9 @@
 			dependencies = (
 			);
 			name = NNSCANNER;
+			packageProductDependencies = (
+				792E5E2029ED9A690022404B /* WeScan */,
+			);
 			productName = NNSCANNER;
 			productReference = 79E6D92329ED3BBE00530CD2 /* NNSCANNER.app */;
 			productType = "com.apple.product-type.application";
@@ -151,6 +315,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79E6D95029ED3BBF00530CD2 /* Build configuration list for PBXNativeTarget "NNSCANNERTests" */;
 			buildPhases = (
+				B3501A7C2259CC6BDC454C12 /* [CP] Check Pods Manifest.lock */,
 				79E6D93529ED3BBF00530CD2 /* Sources */,
 				79E6D93629ED3BBF00530CD2 /* Frameworks */,
 				79E6D93729ED3BBF00530CD2 /* Resources */,
@@ -169,6 +334,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79E6D95329ED3BBF00530CD2 /* Build configuration list for PBXNativeTarget "NNSCANNERUITests" */;
 			buildPhases = (
+				927D5FDC51ED636A58FD2C88 /* [CP] Check Pods Manifest.lock */,
 				79E6D93F29ED3BBF00530CD2 /* Sources */,
 				79E6D94029ED3BBF00530CD2 /* Frameworks */,
 				79E6D94129ED3BBF00530CD2 /* Resources */,
@@ -215,6 +381,9 @@
 				Base,
 			);
 			mainGroup = 79E6D91A29ED3BBE00530CD2;
+			packageReferences = (
+				792E5E1F29ED9A690022404B /* XCRemoteSwiftPackageReference "WeScan" */,
+			);
 			productRefGroup = 79E6D92429ED3BBE00530CD2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,8 +401,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				79E6D93329ED3BBF00530CD2 /* LaunchScreen.storyboard in Resources */,
+				795C21C629ED95EF00700E21 /* RecentViewController.xib in Resources */,
 				79E6D93029ED3BBF00530CD2 /* Assets.xcassets in Resources */,
-				79E6D92E29ED3BBE00530CD2 /* Main.storyboard in Resources */,
+				795C21CA29ED960E00700E21 /* ScanViewController.xib in Resources */,
+				795C21BB29ED7D7A00700E21 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,14 +424,91 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		927D5FDC51ED636A58FD2C88 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NNSCANNER-NNSCANNERUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A147C486635D9436C4BF8F9F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NNSCANNER-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3501A7C2259CC6BDC454C12 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NNSCANNERTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		79E6D91F29ED3BBE00530CD2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79E6D92B29ED3BBE00530CD2 /* ViewController.swift in Sources */,
+				795C2B5D29EE358D003A8B1D /* PDFViewController.swift in Sources */,
+				795C2B6229EE4B3F003A8B1D /* UIImage.swift in Sources */,
+				795C21BD29ED94A100700E21 /* HomeTabBar.swift in Sources */,
+				795C2B6429EE4B7C003A8B1D /* CGSize.swift in Sources */,
+				795C21C929ED960E00700E21 /* ScanViewController.swift in Sources */,
+				795C2B6029EE4069003A8B1D /* ExportViewController.swift in Sources */,
 				79E6D92729ED3BBE00530CD2 /* AppDelegate.swift in Sources */,
 				79E6D92929ED3BBE00530CD2 /* SceneDelegate.swift in Sources */,
+				795C21C529ED95EF00700E21 /* RecentViewController.swift in Sources */,
+				795C21BA29ED7D7A00700E21 /* HomeViewController.swift in Sources */,
+				795C21C029ED94E400700E21 /* UIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +545,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		79E6D92C29ED3BBE00530CD2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				79E6D92D29ED3BBE00530CD2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		79E6D93129ED3BBF00530CD2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -432,6 +672,7 @@
 		};
 		79E6D94E29ED3BBF00530CD2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57FCCB561FF193523960A6CF /* Pods-NNSCANNER.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -440,11 +681,13 @@
 				DEVELOPMENT_TEAM = 7Z5DWB469U;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NNSCANNER/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NNSCANNER;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Request camera permission";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -460,6 +703,7 @@
 		};
 		79E6D94F29ED3BBF00530CD2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D96D7388E1139B445C57737B /* Pods-NNSCANNER.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -468,11 +712,13 @@
 				DEVELOPMENT_TEAM = 7Z5DWB469U;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NNSCANNER/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NNSCANNER;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Request camera permission";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -488,6 +734,7 @@
 		};
 		79E6D95129ED3BBF00530CD2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BC67D627BD05F1E2ADFC618 /* Pods-NNSCANNERTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +755,7 @@
 		};
 		79E6D95229ED3BBF00530CD2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEA88D0802DD027C438B99D2 /* Pods-NNSCANNERTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -528,6 +776,7 @@
 		};
 		79E6D95429ED3BBF00530CD2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 813B402C67CCD02CADDF377E /* Pods-NNSCANNER-NNSCANNERUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -546,6 +795,7 @@
 		};
 		79E6D95529ED3BBF00530CD2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D809DD03611B0280250B674 /* Pods-NNSCANNER-NNSCANNERUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -602,6 +852,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		792E5E1F29ED9A690022404B /* XCRemoteSwiftPackageReference "WeScan" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WeTransfer/WeScan.git";
+			requirement = {
+				kind = exactVersion;
+				version = 2.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		792E5E2029ED9A690022404B /* WeScan */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 792E5E1F29ED9A690022404B /* XCRemoteSwiftPackageReference "WeScan" */;
+			productName = WeScan;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 79E6D91B29ED3BBE00530CD2 /* Project object */;
 }
