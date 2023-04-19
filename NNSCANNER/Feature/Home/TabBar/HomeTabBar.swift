@@ -21,18 +21,15 @@ class HomeTabBarViewController: UITabBarController{
         tabBar.tintColor = UIColor(hex6: "#1859C4")
         tabBar.unselectedItemTintColor = UIColor.gray
         let homeVC = HomeViewController()
-        let scanVC =  ScanViewController()
-        let recentVC = RecentViewController()
+        let settingsVC = SettingsViewController()
 
         let homeNavController = UINavigationController(rootViewController: homeVC)
-//        let scanNavController = UINavigationController(rootViewController: scanVC)
-        let recentNavController = UINavigationController(rootViewController: recentVC)
+        let settingsNavController = UINavigationController(rootViewController: settingsVC)
 
-        homeNavController.tabBarItem = UITabBarItem(title: "Home", image: UIImage(systemName: "house.fill"), tag: 0)
-//        scanNavController.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "camera"), tag: 1)
-        recentNavController.tabBarItem = UITabBarItem(title: "Recent", image: UIImage(systemName: "clock"), tag: 2)
+        homeNavController.tabBarItem = UITabBarItem(title: "Files", image: UIImage(systemName: "folder.fill"), tag: 0)
+        settingsNavController.tabBarItem = UITabBarItem(title: "Settings", image: UIImage(systemName: "person.circle"), tag: 2)
 
-        viewControllers = [homeNavController, recentNavController]
+        viewControllers = [homeNavController, settingsNavController]
 
         // Thiết lập font chữ và màu sắc cho title
         let titleFont = UIFont.systemFont(ofSize: 12, weight: .regular)
@@ -42,39 +39,40 @@ class HomeTabBarViewController: UITabBarController{
         UITabBarItem.appearance().setTitleTextAttributes(normalAttributes, for: .normal)
         UITabBarItem.appearance().setTitleTextAttributes(selectedAttributes, for: .selected)
         // Tạo button
-                centerButton.translatesAutoresizingMaskIntoConstraints = false
-                centerButton.backgroundColor = .red
-                centerButton.layer.cornerRadius = 25
-                centerButton.addTarget(self, action: #selector(showCameraOptions), for: .touchUpInside)
+        centerButton.translatesAutoresizingMaskIntoConstraints = false
+        centerButton.setImage(UIImage(named: "camera"), for: .normal)
 
-                // Thêm button vào view
-                tabBar.addSubview(centerButton)
+        centerButton.layer.cornerRadius = 25
+        centerButton.addTarget(self, action: #selector(showCameraOptions), for: .touchUpInside)
 
-                // Thiết lập constraints cho button
-                centerButton.widthAnchor.constraint(equalToConstant: 50).isActive = true
-                centerButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
-                centerButton.centerXAnchor.constraint(equalTo: tabBar.centerXAnchor).isActive = true
-                centerButton.centerYAnchor.constraint(equalTo: tabBar.topAnchor, constant: 20).isActive = true
+        // Thêm button vào view
+        tabBar.addSubview(centerButton)
 
-                // Đảm bảo button được hiển thị trên các tab
-                view.bringSubviewToFront(tabBar)
+        // Thiết lập constraints cho button
+        centerButton.widthAnchor.constraint(equalToConstant: 50).isActive = true
+        centerButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        centerButton.centerXAnchor.constraint(equalTo: tabBar.centerXAnchor).isActive = true
+        centerButton.centerYAnchor.constraint(equalTo: tabBar.topAnchor, constant: 15).isActive = true
+
+        // Đảm bảo button được hiển thị trên các tab
+        view.bringSubviewToFront(tabBar)
     }
     // Xử lý sự kiện khi button được bấm
     @objc func showCameraOptions() {
         let alertController = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
 
-        let takeOnePageAction = UIAlertAction(title: "Take One Page", style: .default) { _ in
+        let takeOnePageAction = UIAlertAction(title: "Scan One Page", style: .default) { _ in
             let vc = ScanViewController()
             vc.option = 0
             self.navigationController?.pushViewController(vc, animated: true)
         }
-        let takeMultiPageAction = UIAlertAction(title: "Take Multiple Page", style: .default) { _ in
+        let takeMultiPageAction = UIAlertAction(title: "Scan Multiple Page", style: .default) { _ in
             let vc = ScanViewController()
             vc.option = 1
             self.navigationController?.pushViewController(vc, animated: true)
         }
 
-        let choosePhotoAction = UIAlertAction(title: "Choose from Library", style: .default) { _ in
+        let choosePhotoAction = UIAlertAction(title: "Scan from Library", style: .default) { _ in
             let vc = ScanViewController()
             vc.option = 2
             self.navigationController?.pushViewController(vc, animated: true)

@@ -9,19 +9,24 @@
 /* Begin PBXBuildFile section */
 		6A7BF392AEC15FC42DB50003 /* Pods_NNSCANNERTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA07D9A791145496659F0B40 /* Pods_NNSCANNERTests.framework */; };
 		741DBCCA07E2F1D64DBF19C6 /* Pods_NNSCANNER_NNSCANNERUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB6619B90949C54770A14062 /* Pods_NNSCANNER_NNSCANNERUITests.framework */; };
+		7908066229F05A7D008D3845 /* HomeView+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7908066129F05A7D008D3845 /* HomeView+TableView.swift */; };
+		7908066529F05B47008D3845 /* HomeView+PDFKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7908066429F05B47008D3845 /* HomeView+PDFKit.swift */; };
+		7908066729F05C76008D3845 /* ScanView+ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7908066629F05C76008D3845 /* ScanView+ImagePicker.swift */; };
 		792E5E2129ED9A690022404B /* WeScan in Frameworks */ = {isa = PBXBuildFile; productRef = 792E5E2029ED9A690022404B /* WeScan */; };
 		795C21BA29ED7D7A00700E21 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795C21B829ED7D7A00700E21 /* HomeViewController.swift */; };
 		795C21BB29ED7D7A00700E21 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 795C21B929ED7D7A00700E21 /* HomeViewController.xib */; };
 		795C21BD29ED94A100700E21 /* HomeTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795C21BC29ED94A100700E21 /* HomeTabBar.swift */; };
 		795C21C029ED94E400700E21 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795C21BF29ED94E400700E21 /* UIColor.swift */; };
-		795C21C529ED95EF00700E21 /* RecentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795C21C329ED95EF00700E21 /* RecentViewController.swift */; };
-		795C21C629ED95EF00700E21 /* RecentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 795C21C429ED95EF00700E21 /* RecentViewController.xib */; };
-		795C21C929ED960E00700E21 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795C21C729ED960E00700E21 /* ScanViewController.swift */; };
-		795C21CA29ED960E00700E21 /* ScanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 795C21C829ED960E00700E21 /* ScanViewController.xib */; };
 		795C2B5D29EE358D003A8B1D /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795C2B5C29EE358D003A8B1D /* PDFViewController.swift */; };
 		795C2B6029EE4069003A8B1D /* ExportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795C2B5F29EE4069003A8B1D /* ExportViewController.swift */; };
 		795C2B6229EE4B3F003A8B1D /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795C2B6129EE4B3F003A8B1D /* UIImage.swift */; };
 		795C2B6429EE4B7C003A8B1D /* CGSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795C2B6329EE4B7C003A8B1D /* CGSize.swift */; };
+		797B99D529EF903500CCD28C /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797B99D429EF903500CCD28C /* ScanViewController.swift */; };
+		797B99D729EF95A100CCD28C /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797B99D629EF95A100CCD28C /* UIViewController.swift */; };
+		797B99DB29EF9AC800CCD28C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797B99D929EF9AC800CCD28C /* SettingsViewController.swift */; };
+		797B99DC29EF9AC800CCD28C /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 797B99DA29EF9AC800CCD28C /* SettingsViewController.xib */; };
+		79E465CD29EEE52800A42D2E /* PDFTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E465CB29EEE52800A42D2E /* PDFTableViewCell.swift */; };
+		79E465CE29EEE52800A42D2E /* PDFTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79E465CC29EEE52800A42D2E /* PDFTableViewCell.xib */; };
 		79E6D92729ED3BBE00530CD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E6D92629ED3BBE00530CD2 /* AppDelegate.swift */; };
 		79E6D92929ED3BBE00530CD2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E6D92829ED3BBE00530CD2 /* SceneDelegate.swift */; };
 		79E6D93029ED3BBF00530CD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79E6D92F29ED3BBF00530CD2 /* Assets.xcassets */; };
@@ -53,18 +58,23 @@
 		2D809DD03611B0280250B674 /* Pods-NNSCANNER-NNSCANNERUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NNSCANNER-NNSCANNERUITests.release.xcconfig"; path = "Target Support Files/Pods-NNSCANNER-NNSCANNERUITests/Pods-NNSCANNER-NNSCANNERUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4BC67D627BD05F1E2ADFC618 /* Pods-NNSCANNERTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NNSCANNERTests.debug.xcconfig"; path = "Target Support Files/Pods-NNSCANNERTests/Pods-NNSCANNERTests.debug.xcconfig"; sourceTree = "<group>"; };
 		57FCCB561FF193523960A6CF /* Pods-NNSCANNER.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NNSCANNER.debug.xcconfig"; path = "Target Support Files/Pods-NNSCANNER/Pods-NNSCANNER.debug.xcconfig"; sourceTree = "<group>"; };
+		7908066129F05A7D008D3845 /* HomeView+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeView+TableView.swift"; sourceTree = "<group>"; };
+		7908066429F05B47008D3845 /* HomeView+PDFKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeView+PDFKit.swift"; sourceTree = "<group>"; };
+		7908066629F05C76008D3845 /* ScanView+ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScanView+ImagePicker.swift"; sourceTree = "<group>"; };
 		795C21B829ED7D7A00700E21 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		795C21B929ED7D7A00700E21 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		795C21BC29ED94A100700E21 /* HomeTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBar.swift; sourceTree = "<group>"; };
 		795C21BF29ED94E400700E21 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
-		795C21C329ED95EF00700E21 /* RecentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentViewController.swift; sourceTree = "<group>"; };
-		795C21C429ED95EF00700E21 /* RecentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecentViewController.xib; sourceTree = "<group>"; };
-		795C21C729ED960E00700E21 /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
-		795C21C829ED960E00700E21 /* ScanViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScanViewController.xib; sourceTree = "<group>"; };
 		795C2B5C29EE358D003A8B1D /* PDFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
 		795C2B5F29EE4069003A8B1D /* ExportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportViewController.swift; sourceTree = "<group>"; };
 		795C2B6129EE4B3F003A8B1D /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		795C2B6329EE4B7C003A8B1D /* CGSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGSize.swift; sourceTree = "<group>"; };
+		797B99D429EF903500CCD28C /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		797B99D629EF95A100CCD28C /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		797B99D929EF9AC800CCD28C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		797B99DA29EF9AC800CCD28C /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		79E465CB29EEE52800A42D2E /* PDFTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFTableViewCell.swift; sourceTree = "<group>"; };
+		79E465CC29EEE52800A42D2E /* PDFTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PDFTableViewCell.xib; sourceTree = "<group>"; };
 		79E6D92329ED3BBE00530CD2 /* NNSCANNER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NNSCANNER.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79E6D92629ED3BBE00530CD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79E6D92829ED3BBE00530CD2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -136,12 +146,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7908066329F05B24008D3845 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				795C21BC29ED94A100700E21 /* HomeTabBar.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
 		795C21B729ED7D6600700E21 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				7908066329F05B24008D3845 /* TabBar */,
 				795C21B829ED7D7A00700E21 /* HomeViewController.swift */,
 				795C21B929ED7D7A00700E21 /* HomeViewController.xib */,
-				795C21BC29ED94A100700E21 /* HomeTabBar.swift */,
+				7908066129F05A7D008D3845 /* HomeView+TableView.swift */,
+				7908066429F05B47008D3845 /* HomeView+PDFKit.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -152,24 +172,16 @@
 				795C21BF29ED94E400700E21 /* UIColor.swift */,
 				795C2B6129EE4B3F003A8B1D /* UIImage.swift */,
 				795C2B6329EE4B7C003A8B1D /* CGSize.swift */,
+				797B99D629EF95A100CCD28C /* UIViewController.swift */,
 			);
 			path = Extension;
-			sourceTree = "<group>";
-		};
-		795C21C129ED94FF00700E21 /* Recent */ = {
-			isa = PBXGroup;
-			children = (
-				795C21C329ED95EF00700E21 /* RecentViewController.swift */,
-				795C21C429ED95EF00700E21 /* RecentViewController.xib */,
-			);
-			path = Recent;
 			sourceTree = "<group>";
 		};
 		795C21C229ED950900700E21 /* Scan */ = {
 			isa = PBXGroup;
 			children = (
-				795C21C729ED960E00700E21 /* ScanViewController.swift */,
-				795C21C829ED960E00700E21 /* ScanViewController.xib */,
+				797B99D429EF903500CCD28C /* ScanViewController.swift */,
+				7908066629F05C76008D3845 /* ScanView+ImagePicker.swift */,
 			);
 			path = Scan;
 			sourceTree = "<group>";
@@ -180,6 +192,33 @@
 				795C2B5F29EE4069003A8B1D /* ExportViewController.swift */,
 			);
 			path = Export;
+			sourceTree = "<group>";
+		};
+		797B99D829EF9A8900CCD28C /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				797B99D929EF9AC800CCD28C /* SettingsViewController.swift */,
+				797B99DA29EF9AC800CCD28C /* SettingsViewController.xib */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		79E465C929EEE50C00A42D2E /* PDF */ = {
+			isa = PBXGroup;
+			children = (
+				79E465CA29EEE51400A42D2E /* Cell */,
+				795C2B5C29EE358D003A8B1D /* PDFViewController.swift */,
+			);
+			path = PDF;
+			sourceTree = "<group>";
+		};
+		79E465CA29EEE51400A42D2E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				79E465CB29EEE52800A42D2E /* PDFTableViewCell.swift */,
+				79E465CC29EEE52800A42D2E /* PDFTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		79E6D91A29ED3BBE00530CD2 = {
@@ -268,11 +307,11 @@
 		79E6D95A29ED3C2800530CD2 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				797B99D829EF9A8900CCD28C /* Settings */,
+				79E465C929EEE50C00A42D2E /* PDF */,
 				795C2B5E29EE4054003A8B1D /* Export */,
 				795C21B729ED7D6600700E21 /* Home */,
 				795C21C229ED950900700E21 /* Scan */,
-				795C21C129ED94FF00700E21 /* Recent */,
-				795C2B5C29EE358D003A8B1D /* PDFViewController.swift */,
 			);
 			path = Feature;
 			sourceTree = "<group>";
@@ -401,9 +440,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				79E6D93329ED3BBF00530CD2 /* LaunchScreen.storyboard in Resources */,
-				795C21C629ED95EF00700E21 /* RecentViewController.xib in Resources */,
+				797B99DC29EF9AC800CCD28C /* SettingsViewController.xib in Resources */,
 				79E6D93029ED3BBF00530CD2 /* Assets.xcassets in Resources */,
-				795C21CA29ED960E00700E21 /* ScanViewController.xib in Resources */,
+				79E465CE29EEE52800A42D2E /* PDFTableViewCell.xib in Resources */,
 				795C21BB29ED7D7A00700E21 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -499,16 +538,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				795C2B5D29EE358D003A8B1D /* PDFViewController.swift in Sources */,
+				7908066729F05C76008D3845 /* ScanView+ImagePicker.swift in Sources */,
 				795C2B6229EE4B3F003A8B1D /* UIImage.swift in Sources */,
 				795C21BD29ED94A100700E21 /* HomeTabBar.swift in Sources */,
 				795C2B6429EE4B7C003A8B1D /* CGSize.swift in Sources */,
-				795C21C929ED960E00700E21 /* ScanViewController.swift in Sources */,
 				795C2B6029EE4069003A8B1D /* ExportViewController.swift in Sources */,
+				7908066529F05B47008D3845 /* HomeView+PDFKit.swift in Sources */,
+				79E465CD29EEE52800A42D2E /* PDFTableViewCell.swift in Sources */,
 				79E6D92729ED3BBE00530CD2 /* AppDelegate.swift in Sources */,
+				797B99D729EF95A100CCD28C /* UIViewController.swift in Sources */,
 				79E6D92929ED3BBE00530CD2 /* SceneDelegate.swift in Sources */,
-				795C21C529ED95EF00700E21 /* RecentViewController.swift in Sources */,
+				7908066229F05A7D008D3845 /* HomeView+TableView.swift in Sources */,
+				797B99DB29EF9AC800CCD28C /* SettingsViewController.swift in Sources */,
 				795C21BA29ED7D7A00700E21 /* HomeViewController.swift in Sources */,
 				795C21C029ED94E400700E21 /* UIColor.swift in Sources */,
+				797B99D529EF903500CCD28C /* ScanViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

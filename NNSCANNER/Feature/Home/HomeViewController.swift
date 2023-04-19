@@ -6,33 +6,38 @@
 //
 
 import UIKit
+import PDFKit
 
-class HomeViewController: UIViewController{ //, UITableViewDelegate, UITableViewDataSource {
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return fileURLs.count
-//    }
-//
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
-//        cell.textLabel?.text = fileURLs[indexPath.row].lastPathComponent
-//        return cell
-//    }
+class HomeViewController: UIViewController{
+    var pdfFiles: [URL] = []
+    @IBOutlet weak var tableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        let tableView = UITableView(frame: view.bounds, style: .plain)
-//        tableView.dataSource = self
-//        tableView.delegate = self
-//        view.addSubview(tableView)
 
-        let fileManager = FileManager.default
-        let documentsURL = try! fileManager.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
-
-        let fileURLs = try! fileManager.contentsOfDirectory(at: documentsURL, includingPropertiesForKeys: nil)
-
-        for file in fileURLs {
-            print(file.lastPathComponent)
-        }
-
+        self.title = "Files"
+        self.setUpNavigationBar(color: UIColor(hex6: "#185AC3")!)
+        loadData()
+        setUpTableView()
     }
+    override func viewWillAppear(_ animated: Bool) {
+        loadData()
+    }
+
+    private func loadData() {
+        let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+        do {
+            let pdfFileURLs = try FileManager.default.contentsOfDirectory(at: documentsDirectory, includingPropertiesForKeys: [.creationDateKey], options: .skipsHiddenFiles)
+                .filter { $0.pathExtension == "pdf" }
+                .sorted { (url1, url2) -> Bool in
+                    let creationDate1 = try url1.resourceValues(forKeys: [.creationDateKey]).creationDate!
+                    let creationDate2 = try url2.resourceValues(forKeys: [.creationDateKey]).creationDate!
+                    return creationDate1 > creationDate2
+                }
+            pdfFiles = pdfFileURLs
+        } catch {
+            print("Lỗi khi truy cập vào thư mục Documents: \(error.localizedDescription)")
+        }
+    }
+
 }

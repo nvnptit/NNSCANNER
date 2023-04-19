@@ -9,7 +9,6 @@ import UIKit
 extension UIColor {
     convenience init?(hex8: String) {
         let r, g, b, a: CGFloat
-
         if hex8.hasPrefix("#") {
             let start = hex8.index(hex8.startIndex, offsetBy: 1)
             let hexColor = String(hex8[start...])
@@ -32,8 +31,6 @@ extension UIColor {
 
         return nil
     }
-}
-extension UIColor {
     convenience init?(hex6: String) {
         var hexString = hex6.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
 
