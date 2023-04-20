@@ -13,8 +13,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         if UserDefaults.standard.object(forKey: "DocMode") == nil || UserDefaults.standard.object(forKey: "ScanMode") == nil {
-            UserDefaults.standard.set(1, forKey: "DocMode")
-            UserDefaults.standard.set(1, forKey: "ScanMode")
+            UserDefaults.standard.set(2, forKey: "DocMode")
+            UserDefaults.standard.set(2, forKey: "ScanMode")
         }
         return true
     }

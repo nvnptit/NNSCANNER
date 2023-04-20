@@ -34,6 +34,7 @@ extension UIViewController {
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for:.default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
     }
+    
     func presentPDFView(with document: PDFDocument) {
         let pdfView = PDFView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: view.bounds.height - 100))
         pdfView.autoScales = true
