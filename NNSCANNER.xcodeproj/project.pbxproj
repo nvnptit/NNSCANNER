@@ -26,6 +26,11 @@
 		797B99D729EF95A100CCD28C /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797B99D629EF95A100CCD28C /* UIViewController.swift */; };
 		797B99DB29EF9AC800CCD28C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797B99D929EF9AC800CCD28C /* SettingsViewController.swift */; };
 		797B99DC29EF9AC800CCD28C /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 797B99DA29EF9AC800CCD28C /* SettingsViewController.xib */; };
+		79CDF26F29F1976000269584 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CDF26D29F1976000269584 /* PreviewViewController.swift */; };
+		79CDF27029F1976000269584 /* PreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79CDF26E29F1976000269584 /* PreviewViewController.xib */; };
+		79CDF27329F197BF00269584 /* PreviewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CDF27129F197BF00269584 /* PreviewCollectionViewCell.swift */; };
+		79CDF27429F197BF00269584 /* PreviewCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79CDF27229F197BF00269584 /* PreviewCollectionViewCell.xib */; };
+		79CDF27929F1AD4300269584 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CDF27829F1AD4300269584 /* UIView.swift */; };
 		79E465CD29EEE52800A42D2E /* PDFTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E465CB29EEE52800A42D2E /* PDFTableViewCell.swift */; };
 		79E465CE29EEE52800A42D2E /* PDFTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79E465CC29EEE52800A42D2E /* PDFTableViewCell.xib */; };
 		79E6D92729ED3BBE00530CD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E6D92629ED3BBE00530CD2 /* AppDelegate.swift */; };
@@ -75,6 +80,11 @@
 		797B99D629EF95A100CCD28C /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		797B99D929EF9AC800CCD28C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		797B99DA29EF9AC800CCD28C /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		79CDF26D29F1976000269584 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
+		79CDF26E29F1976000269584 /* PreviewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreviewViewController.xib; sourceTree = "<group>"; };
+		79CDF27129F197BF00269584 /* PreviewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewCollectionViewCell.swift; sourceTree = "<group>"; };
+		79CDF27229F197BF00269584 /* PreviewCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreviewCollectionViewCell.xib; sourceTree = "<group>"; };
+		79CDF27829F1AD4300269584 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		79E465CB29EEE52800A42D2E /* PDFTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFTableViewCell.swift; sourceTree = "<group>"; };
 		79E465CC29EEE52800A42D2E /* PDFTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PDFTableViewCell.xib; sourceTree = "<group>"; };
 		79E6D92329ED3BBE00530CD2 /* NNSCANNER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NNSCANNER.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -176,6 +186,7 @@
 				795C2B6129EE4B3F003A8B1D /* UIImage.swift */,
 				795C2B6329EE4B7C003A8B1D /* CGSize.swift */,
 				797B99D629EF95A100CCD28C /* UIViewController.swift */,
+				79CDF27829F1AD4300269584 /* UIView.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -183,6 +194,7 @@
 		795C21C229ED950900700E21 /* Scan */ = {
 			isa = PBXGroup;
 			children = (
+				79CDF26A29F1894500269584 /* Preview */,
 				797B99D429EF903500CCD28C /* ScanViewController.swift */,
 				7908066629F05C76008D3845 /* ScanView+ImagePicker.swift */,
 			);
@@ -204,6 +216,25 @@
 				797B99DA29EF9AC800CCD28C /* SettingsViewController.xib */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		79CDF26A29F1894500269584 /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				79CDF27529F197C400269584 /* Cell */,
+				79CDF26D29F1976000269584 /* PreviewViewController.swift */,
+				79CDF26E29F1976000269584 /* PreviewViewController.xib */,
+			);
+			path = Preview;
+			sourceTree = "<group>";
+		};
+		79CDF27529F197C400269584 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				79CDF27129F197BF00269584 /* PreviewCollectionViewCell.swift */,
+				79CDF27229F197BF00269584 /* PreviewCollectionViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		79E465C929EEE50C00A42D2E /* PDF */ = {
@@ -445,7 +476,9 @@
 				79E6D93329ED3BBF00530CD2 /* LaunchScreen.storyboard in Resources */,
 				797B99DC29EF9AC800CCD28C /* SettingsViewController.xib in Resources */,
 				79E6D93029ED3BBF00530CD2 /* Assets.xcassets in Resources */,
+				79CDF27029F1976000269584 /* PreviewViewController.xib in Resources */,
 				79E465CE29EEE52800A42D2E /* PDFTableViewCell.xib in Resources */,
+				79CDF27429F197BF00269584 /* PreviewCollectionViewCell.xib in Resources */,
 				795C21BB29ED7D7A00700E21 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -549,6 +582,8 @@
 				7908066529F05B47008D3845 /* HomeView+PDFKit.swift in Sources */,
 				79E465CD29EEE52800A42D2E /* PDFTableViewCell.swift in Sources */,
 				79E6D92729ED3BBE00530CD2 /* AppDelegate.swift in Sources */,
+				79CDF27929F1AD4300269584 /* UIView.swift in Sources */,
+				79CDF27329F197BF00269584 /* PreviewCollectionViewCell.swift in Sources */,
 				797B99D729EF95A100CCD28C /* UIViewController.swift in Sources */,
 				79E6D92929ED3BBE00530CD2 /* SceneDelegate.swift in Sources */,
 				7908066229F05A7D008D3845 /* HomeView+TableView.swift in Sources */,
@@ -557,6 +592,7 @@
 				795C21C029ED94E400700E21 /* UIColor.swift in Sources */,
 				797B99D529EF903500CCD28C /* ScanViewController.swift in Sources */,
 				7943353129F0AA9C00648023 /* HomeView+SearchBar.swift in Sources */,
+				79CDF26F29F1976000269584 /* PreviewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

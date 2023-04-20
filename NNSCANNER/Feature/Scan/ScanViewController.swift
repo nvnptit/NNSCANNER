@@ -11,11 +11,13 @@ import PDFKit
 
 class ScanViewController: UIViewController{
     var dataScan: [Data] = []
+    var dataImage: [UIImage] = []
     var isMultiPage: Bool = false
+    var isMore: Bool = false
     var option = -1
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.dataScan.removeAll()
+        if (!isMore) {self.dataScan.removeAll() }
         switch option {
             case 0:
                 self.isMultiPage = false
@@ -45,6 +47,7 @@ extension ScanViewController: ImageScannerControllerDelegate {
                 if (scanMode == 1){
                     if (self.isMultiPage){
                         self.dataScan.append(results.croppedScan.image.pdfData()!)
+                        self.dataImage.append(results.croppedScan.image)
                         scanner.resetScanner()
                     }else {
                         let vc = ExportViewController()
@@ -56,6 +59,7 @@ extension ScanViewController: ImageScannerControllerDelegate {
                     if (self.isMultiPage){
                         if let enhanced = results.enhancedScan{
                             self.dataScan.append(enhanced.image.pdfData()!)
+                            self.dataImage.append(results.croppedScan.image)
                             scanner.resetScanner()
                         }
                     }else {
@@ -72,6 +76,7 @@ extension ScanViewController: ImageScannerControllerDelegate {
                 if (scanMode == 1){
                     if (self.isMultiPage){
                         self.dataScan.append(results.croppedScan.image.pdfA4Page()!)
+                        self.dataImage.append(results.croppedScan.image)
                         scanner.resetScanner()
                     }else {
                         let vc = ExportViewController()
@@ -83,6 +88,7 @@ extension ScanViewController: ImageScannerControllerDelegate {
                     if (self.isMultiPage){
                         if let enhanced = results.enhancedScan{
                             self.dataScan.append(enhanced.image.pdfA4Page()!)
+                            self.dataImage.append(results.croppedScan.image)
                             scanner.resetScanner()
                         }
                     }else {
@@ -99,6 +105,7 @@ extension ScanViewController: ImageScannerControllerDelegate {
                 if (scanMode == 1){
                     if (self.isMultiPage){
                         self.dataScan.append(results.croppedScan.image.pdfSimplePage()!)
+                        self.dataImage.append(results.croppedScan.image)
                         scanner.resetScanner()
                     }else {
                         let vc = ExportViewController()
@@ -110,6 +117,7 @@ extension ScanViewController: ImageScannerControllerDelegate {
                     if (self.isMultiPage){
                         if let enhanced = results.enhancedScan{
                             self.dataScan.append(enhanced.image.pdfSimplePage()!)
+                            self.dataImage.append(results.croppedScan.image)
                             scanner.resetScanner()
                         }
                     }else {
@@ -128,12 +136,12 @@ extension ScanViewController: ImageScannerControllerDelegate {
     }
     
     func imageScannerControllerDidCancel(_ scanner: WeScan.ImageScannerController) {
-        if (!self.isMultiPage){
+        if (!self.isMultiPage || dataScan.isEmpty){
             self.navigationController?.setViewControllers([HomeTabBarViewController()], animated: true)
         }else {
-            let vc = ExportViewController()
-            vc.isMultiPage = true
-            vc.listPDFData = self.dataScan
+            let vc = PreviewViewController()
+            vc.scannedImageData = self.dataScan
+            vc.dataImage = self.dataImage
             self.navigationController?.setViewControllers([vc], animated: true)
         }
         scanner.dismiss(animated: false, completion:nil)

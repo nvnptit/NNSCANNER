@@ -24,6 +24,7 @@ extension HomeViewController: UISearchControllerDelegate, UISearchBarDelegate{
         if searchText.isEmpty {
             // Nếu không có nội dung trong ô tìm kiếm thì hiển thị tất cả các tệp PDF
             filteredPDFFiles = pdfFiles
+            reloadData()
         } else {
             // Lọc danh sách tệp PDF dựa trên tên tệp
             filteredPDFFiles = pdfFiles.filter { $0.lastPathComponent.lowercased().contains(searchText.lowercased()) }

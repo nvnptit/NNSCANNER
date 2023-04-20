@@ -14,19 +14,19 @@ extension HomeViewController {
         do {
             try FileManager.default.moveItem(at: oldURL, to: newURL)
             // Cập nhật danh sách tài liệu PDF
-            if let index = pdfFiles.firstIndex(of: oldURL) {
-                pdfFiles[index] = newURL
+            if let index = filteredPDFFiles.firstIndex(of: oldURL) {
+                filteredPDFFiles[index] = newURL
+                reloadData()
             }
-            reloadTableView()
         } catch {
             print("Error rename PDF file: \(error.localizedDescription)")
         }
     }
      func deletePDF(at indexPath: IndexPath) {
         do {
-            try FileManager.default.removeItem(at: pdfFiles[indexPath.row])
-            pdfFiles.remove(at: indexPath.row)
-            reloadTableView()
+            try FileManager.default.removeItem(at: filteredPDFFiles[indexPath.row])
+            filteredPDFFiles.remove(at: indexPath.row)
+            reloadData()
         } catch {
             print("Error delete PDF file: \(error.localizedDescription)")
         }

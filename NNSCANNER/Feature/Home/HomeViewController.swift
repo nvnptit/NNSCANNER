@@ -75,7 +75,6 @@ class HomeViewController: UIViewController{
         let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
         do {
             let pdfFileURLs = try FileManager.default.contentsOfDirectory(at: documentsDirectory, includingPropertiesForKeys: [.creationDateKey], options: .skipsHiddenFiles)
-                .filter { $0.pathExtension == "pdf" }
                 .sorted { (url1, url2) -> Bool in
                     let creationDate1 = try url1.resourceValues(forKeys: [.creationDateKey]).creationDate!
                     let creationDate2 = try url2.resourceValues(forKeys: [.creationDateKey]).creationDate!
