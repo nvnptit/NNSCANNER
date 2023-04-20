@@ -84,7 +84,7 @@ class HomeViewController: UIViewController{
             pdfFiles = pdfFileURLs
             filteredPDFFiles = pdfFiles
         } catch {
-            print("Lỗi khi truy cập vào thư mục Documents: \(error.localizedDescription)")
+            print("Error access Documents: \(error.localizedDescription)")
         }
     }
 }

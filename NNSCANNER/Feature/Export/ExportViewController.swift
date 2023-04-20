@@ -32,10 +32,9 @@ class ExportViewController: UIViewController {
         let fileURL = documentsDirectory.appendingPathComponent(fileName)
         do {
             try pdfData.write(to: fileURL)
-            print("Dữ liệu PDF đã được lưu tại \(fileURL.path)")
             self.navigationController?.setViewControllers([HomeTabBarViewController()], animated: true)
         } catch {
-            print("Lỗi khi lưu dữ liệu PDF: \(error.localizedDescription)")
+            print("Error save PDF: \(error.localizedDescription)")
         }
     }
 
@@ -57,10 +56,9 @@ class ExportViewController: UIViewController {
         }
         do {
             try pdfDocument.dataRepresentation()?.write(to: fileURL)
-            print("Dữ liệu PDF đã được lưu tại \(fileURL.path)")
             self.navigationController?.setViewControllers([HomeTabBarViewController()], animated: true)
         } catch {
-            print("Lỗi khi lưu dữ liệu PDF: \(error.localizedDescription)")
+            print("Error save PDF: \(error.localizedDescription)")
         }
     }
 }
