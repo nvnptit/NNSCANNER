@@ -13,6 +13,7 @@
 		7908066529F05B47008D3845 /* HomeView+PDFKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7908066429F05B47008D3845 /* HomeView+PDFKit.swift */; };
 		7908066729F05C76008D3845 /* ScanView+ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7908066629F05C76008D3845 /* ScanView+ImagePicker.swift */; };
 		792E5E2129ED9A690022404B /* WeScan in Frameworks */ = {isa = PBXBuildFile; productRef = 792E5E2029ED9A690022404B /* WeScan */; };
+		7943353129F0AA9C00648023 /* HomeView+SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7943353029F0AA9C00648023 /* HomeView+SearchBar.swift */; };
 		795C21BA29ED7D7A00700E21 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795C21B829ED7D7A00700E21 /* HomeViewController.swift */; };
 		795C21BB29ED7D7A00700E21 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 795C21B929ED7D7A00700E21 /* HomeViewController.xib */; };
 		795C21BD29ED94A100700E21 /* HomeTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795C21BC29ED94A100700E21 /* HomeTabBar.swift */; };
@@ -61,6 +62,7 @@
 		7908066129F05A7D008D3845 /* HomeView+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeView+TableView.swift"; sourceTree = "<group>"; };
 		7908066429F05B47008D3845 /* HomeView+PDFKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeView+PDFKit.swift"; sourceTree = "<group>"; };
 		7908066629F05C76008D3845 /* ScanView+ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScanView+ImagePicker.swift"; sourceTree = "<group>"; };
+		7943353029F0AA9C00648023 /* HomeView+SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeView+SearchBar.swift"; sourceTree = "<group>"; };
 		795C21B829ED7D7A00700E21 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		795C21B929ED7D7A00700E21 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		795C21BC29ED94A100700E21 /* HomeTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBar.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 				795C21B929ED7D7A00700E21 /* HomeViewController.xib */,
 				7908066129F05A7D008D3845 /* HomeView+TableView.swift */,
 				7908066429F05B47008D3845 /* HomeView+PDFKit.swift */,
+				7943353029F0AA9C00648023 /* HomeView+SearchBar.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -553,6 +556,7 @@
 				795C21BA29ED7D7A00700E21 /* HomeViewController.swift in Sources */,
 				795C21C029ED94E400700E21 /* UIColor.swift in Sources */,
 				797B99D529EF903500CCD28C /* ScanViewController.swift in Sources */,
+				7943353129F0AA9C00648023 /* HomeView+SearchBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

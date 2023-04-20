@@ -27,14 +27,14 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
 
         let alertController = UIAlertController(title: "Edit PDF Name", message: nil, preferredStyle: .alert)
         alertController.addTextField { (textField) in
-            textField.text = self.pdfFiles[indexPath.row].lastPathComponent
+            textField.text = self.filteredPDFFiles[indexPath.row].lastPathComponent
         }
         alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         alertController.addAction(UIAlertAction(title: "Save", style: .default, handler: { (action) in
             guard let newName = alertController.textFields?.first?.text, !newName.isEmpty else {
                 return
             }
-            let oldURL = self.pdfFiles[indexPath.row]
+            let oldURL = self.filteredPDFFiles[indexPath.row]
             self.renamePDF(oldURL, to: newName)
         }))
         present(alertController, animated: true, completion: nil)
@@ -42,12 +42,12 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     // MARK: - UITableViewDataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return pdfFiles.count
+        return filteredPDFFiles.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PDFTableViewCell", for: indexPath) as! PDFTableViewCell
-        guard let pdfDocument = PDFDocument(url: pdfFiles[indexPath.row]) else { return cell }
+        guard let pdfDocument = PDFDocument(url: filteredPDFFiles[indexPath.row]) else { return cell }
         cell.configure(with: pdfDocument)
         // Add edit button to cell
         let editButton = UIButton(type: .system)
@@ -63,10 +63,11 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
 
     // MARK: - UITableViewDelegate
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        searchBar.resignFirstResponder()
         tableView.deselectRow(at: indexPath, animated: true)
         let cell = tableView.dequeueReusableCell(withIdentifier: "PDFTableViewCell", for: indexPath) as! PDFTableViewCell
         cell.selectionStyle = .none
-        let url = pdfFiles[indexPath.row]
+        let url = filteredPDFFiles[indexPath.row]
         showPDF(url: url)
     }
 
