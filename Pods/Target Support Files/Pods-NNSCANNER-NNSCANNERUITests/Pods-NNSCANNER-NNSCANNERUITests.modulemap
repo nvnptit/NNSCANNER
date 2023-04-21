@@ -1,0 +1,6 @@
+framework module Pods_NNSCANNER_NNSCANNERUITests {
+  umbrella header "Pods-NNSCANNER-NNSCANNERUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

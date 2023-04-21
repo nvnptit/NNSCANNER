@@ -1,0 +1,755 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0DABCE44AA2E1E47E6DE6FD7B4F8F1F0 /* Pods-NNSCANNERTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A88BE7CFD7D22E71936EBE5AA2EBD98F /* Pods-NNSCANNERTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1902FF96527DCDE24C7A99C68406F3E1 /* Pods-NNSCANNER-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 94763C199D872E0B17448AFCA45BA230 /* Pods-NNSCANNER-dummy.m */; };
+		242A06D7D9B3045E19F03B33DAB4A7CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		6D18EAA6AB5501DED9737C595BAE19A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		91FD0A6D29FF9C00279CDB369EC2E5D8 /* Pods-NNSCANNER-NNSCANNERUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F27D64C2F66BEE547A0C2F8526845A97 /* Pods-NNSCANNER-NNSCANNERUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		967F583AD403357DBAC40DCDA91D8CA6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		A778B0F72C4BC30A416CFD809F2E7EF8 /* Pods-NNSCANNERTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 097EA2C6EC8900EAB3C3866055562F65 /* Pods-NNSCANNERTests-dummy.m */; };
+		AAF53E193988FE9D13B4390852BA7715 /* Pods-NNSCANNER-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A3E7009AAA1E503DF03CE29FBCB6F742 /* Pods-NNSCANNER-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0EF72314072F0F882DF9C1B7B6D30E0 /* Pods-NNSCANNER-NNSCANNERUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8BA796D60CF0F6EB31066908924A11 /* Pods-NNSCANNER-NNSCANNERUITests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BA3B8C461985D9C27D53D29F0163E5C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B753B10714207DA0954C5CE5F35F982F;
+			remoteInfo = "Pods-NNSCANNER";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		097EA2C6EC8900EAB3C3866055562F65 /* Pods-NNSCANNERTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NNSCANNERTests-dummy.m"; sourceTree = "<group>"; };
+		22D837AB8144D34CF9D4CD27D42B781A /* Pods-NNSCANNERTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NNSCANNERTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		23E6BA8A3CFD02C0FACED489C0B42487 /* Pods-NNSCANNER-NNSCANNERUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NNSCANNER-NNSCANNERUITests.modulemap"; sourceTree = "<group>"; };
+		2A209FF21D3A85363E2762F2DDE0C56B /* Pods-NNSCANNER-NNSCANNERUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-NNSCANNER-NNSCANNERUITests"; path = Pods_NNSCANNER_NNSCANNERUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37F77EEAC06CE895B228E6DD5CFCD29E /* Pods-NNSCANNER.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NNSCANNER.debug.xcconfig"; sourceTree = "<group>"; };
+		4B8BA796D60CF0F6EB31066908924A11 /* Pods-NNSCANNER-NNSCANNERUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NNSCANNER-NNSCANNERUITests-dummy.m"; sourceTree = "<group>"; };
+		5914C3B698BADC97F2F640C0003676FA /* Pods-NNSCANNER-NNSCANNERUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NNSCANNER-NNSCANNERUITests-Info.plist"; sourceTree = "<group>"; };
+		5EC0AD88E9DA4487C189F7DD97C3EE0B /* Pods-NNSCANNER.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NNSCANNER.modulemap"; sourceTree = "<group>"; };
+		63F7E43E03511C463D5D2940912187EC /* Pods-NNSCANNERTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NNSCANNERTests.release.xcconfig"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		82622EBA5547542295EB5C0D20A0E561 /* Pods-NNSCANNER-NNSCANNERUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NNSCANNER-NNSCANNERUITests.release.xcconfig"; sourceTree = "<group>"; };
+		94763C199D872E0B17448AFCA45BA230 /* Pods-NNSCANNER-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NNSCANNER-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D959C6D197A411386FDD207BF2CF43D /* Pods-NNSCANNERTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-NNSCANNERTests"; path = Pods_NNSCANNERTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0A2A7140FEDDB884DF4DC0FDA154B44 /* Pods-NNSCANNER-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NNSCANNER-acknowledgements.plist"; sourceTree = "<group>"; };
+		A0EE0443BEF8FBFFF6A1C2A2F07563FE /* Pods-NNSCANNER-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NNSCANNER-Info.plist"; sourceTree = "<group>"; };
+		A3E7009AAA1E503DF03CE29FBCB6F742 /* Pods-NNSCANNER-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NNSCANNER-umbrella.h"; sourceTree = "<group>"; };
+		A88BE7CFD7D22E71936EBE5AA2EBD98F /* Pods-NNSCANNERTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NNSCANNERTests-umbrella.h"; sourceTree = "<group>"; };
+		AFAEC8A0E04A981E21050679D7532DFF /* Pods-NNSCANNERTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NNSCANNERTests.modulemap"; sourceTree = "<group>"; };
+		B7BB29F2DA233F8CFB944B927DBD5BEF /* Pods-NNSCANNERTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NNSCANNERTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BD7A021CCCF627838EC30F787C33376E /* Pods-NNSCANNER-NNSCANNERUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NNSCANNER-NNSCANNERUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BE0198311E4296187FAC8BA49772BC6C /* Pods-NNSCANNER.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NNSCANNER.release.xcconfig"; sourceTree = "<group>"; };
+		C879B726B87FB67D891BE2F1D0491C17 /* Pods-NNSCANNER-NNSCANNERUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NNSCANNER-NNSCANNERUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		CBBF87D20F866B10487C65F2289C8727 /* Pods-NNSCANNER-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NNSCANNER-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EA2817AFAAA9B02895F7B76141970040 /* Pods-NNSCANNERTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NNSCANNERTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EBD96DBACF3ED69FCC26CFBB7BEBBA85 /* Pods-NNSCANNER-NNSCANNERUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NNSCANNER-NNSCANNERUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F27D64C2F66BEE547A0C2F8526845A97 /* Pods-NNSCANNER-NNSCANNERUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NNSCANNER-NNSCANNERUITests-umbrella.h"; sourceTree = "<group>"; };
+		FBAE97FF5103E7327614D60510628C1D /* Pods-NNSCANNER */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-NNSCANNER"; path = Pods_NNSCANNER.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD45927B5EA80CE4037B881B608A60E0 /* Pods-NNSCANNERTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NNSCANNERTests-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		003257847859427F0C9D20E1C5A28584 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				242A06D7D9B3045E19F03B33DAB4A7CB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33953204EE8F1EACFC6BC529F153C3C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				967F583AD403357DBAC40DCDA91D8CA6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A18EBC7D39AAA007CE43CEE31253FFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D18EAA6AB5501DED9737C595BAE19A7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		120A2F9FB8B8B0D2AE75861FA60DB1A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBAE97FF5103E7327614D60510628C1D /* Pods-NNSCANNER */,
+				2A209FF21D3A85363E2762F2DDE0C56B /* Pods-NNSCANNER-NNSCANNERUITests */,
+				9D959C6D197A411386FDD207BF2CF43D /* Pods-NNSCANNERTests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5BA1ADA9B0742C1CDA766FE6266559C3 /* Pods-NNSCANNER-NNSCANNERUITests */ = {
+			isa = PBXGroup;
+			children = (
+				23E6BA8A3CFD02C0FACED489C0B42487 /* Pods-NNSCANNER-NNSCANNERUITests.modulemap */,
+				EBD96DBACF3ED69FCC26CFBB7BEBBA85 /* Pods-NNSCANNER-NNSCANNERUITests-acknowledgements.markdown */,
+				C879B726B87FB67D891BE2F1D0491C17 /* Pods-NNSCANNER-NNSCANNERUITests-acknowledgements.plist */,
+				4B8BA796D60CF0F6EB31066908924A11 /* Pods-NNSCANNER-NNSCANNERUITests-dummy.m */,
+				5914C3B698BADC97F2F640C0003676FA /* Pods-NNSCANNER-NNSCANNERUITests-Info.plist */,
+				F27D64C2F66BEE547A0C2F8526845A97 /* Pods-NNSCANNER-NNSCANNERUITests-umbrella.h */,
+				BD7A021CCCF627838EC30F787C33376E /* Pods-NNSCANNER-NNSCANNERUITests.debug.xcconfig */,
+				82622EBA5547542295EB5C0D20A0E561 /* Pods-NNSCANNER-NNSCANNERUITests.release.xcconfig */,
+			);
+			name = "Pods-NNSCANNER-NNSCANNERUITests";
+			path = "Target Support Files/Pods-NNSCANNER-NNSCANNERUITests";
+			sourceTree = "<group>";
+		};
+		AC9129D5BDB18904E7586C1F24E68544 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F99E09CFD500610D6F00721EB7BB56C2 /* Pods-NNSCANNER */,
+				5BA1ADA9B0742C1CDA766FE6266559C3 /* Pods-NNSCANNER-NNSCANNERUITests */,
+				E857F5C6566193B492F222D8A0093A7C /* Pods-NNSCANNERTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				120A2F9FB8B8B0D2AE75861FA60DB1A5 /* Products */,
+				AC9129D5BDB18904E7586C1F24E68544 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E857F5C6566193B492F222D8A0093A7C /* Pods-NNSCANNERTests */ = {
+			isa = PBXGroup;
+			children = (
+				AFAEC8A0E04A981E21050679D7532DFF /* Pods-NNSCANNERTests.modulemap */,
+				B7BB29F2DA233F8CFB944B927DBD5BEF /* Pods-NNSCANNERTests-acknowledgements.markdown */,
+				22D837AB8144D34CF9D4CD27D42B781A /* Pods-NNSCANNERTests-acknowledgements.plist */,
+				097EA2C6EC8900EAB3C3866055562F65 /* Pods-NNSCANNERTests-dummy.m */,
+				FD45927B5EA80CE4037B881B608A60E0 /* Pods-NNSCANNERTests-Info.plist */,
+				A88BE7CFD7D22E71936EBE5AA2EBD98F /* Pods-NNSCANNERTests-umbrella.h */,
+				EA2817AFAAA9B02895F7B76141970040 /* Pods-NNSCANNERTests.debug.xcconfig */,
+				63F7E43E03511C463D5D2940912187EC /* Pods-NNSCANNERTests.release.xcconfig */,
+			);
+			name = "Pods-NNSCANNERTests";
+			path = "Target Support Files/Pods-NNSCANNERTests";
+			sourceTree = "<group>";
+		};
+		F99E09CFD500610D6F00721EB7BB56C2 /* Pods-NNSCANNER */ = {
+			isa = PBXGroup;
+			children = (
+				5EC0AD88E9DA4487C189F7DD97C3EE0B /* Pods-NNSCANNER.modulemap */,
+				CBBF87D20F866B10487C65F2289C8727 /* Pods-NNSCANNER-acknowledgements.markdown */,
+				A0A2A7140FEDDB884DF4DC0FDA154B44 /* Pods-NNSCANNER-acknowledgements.plist */,
+				94763C199D872E0B17448AFCA45BA230 /* Pods-NNSCANNER-dummy.m */,
+				A0EE0443BEF8FBFFF6A1C2A2F07563FE /* Pods-NNSCANNER-Info.plist */,
+				A3E7009AAA1E503DF03CE29FBCB6F742 /* Pods-NNSCANNER-umbrella.h */,
+				37F77EEAC06CE895B228E6DD5CFCD29E /* Pods-NNSCANNER.debug.xcconfig */,
+				BE0198311E4296187FAC8BA49772BC6C /* Pods-NNSCANNER.release.xcconfig */,
+			);
+			name = "Pods-NNSCANNER";
+			path = "Target Support Files/Pods-NNSCANNER";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2E33B5BDB45011ABAAA670E1CDC2912F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91FD0A6D29FF9C00279CDB369EC2E5D8 /* Pods-NNSCANNER-NNSCANNERUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91E67B38A39B8EE4B28650DD5341782D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAF53E193988FE9D13B4390852BA7715 /* Pods-NNSCANNER-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0F496172B2C6F6E40E5F852A87691FF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DABCE44AA2E1E47E6DE6FD7B4F8F1F0 /* Pods-NNSCANNERTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1EE669CA6DB8166535CFB5BAB041F634 /* Pods-NNSCANNERTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4B657320F5288B2CF0A6A41A4E64685 /* Build configuration list for PBXNativeTarget "Pods-NNSCANNERTests" */;
+			buildPhases = (
+				D0F496172B2C6F6E40E5F852A87691FF /* Headers */,
+				42E3D5CA0AA91D9D430B7B9E27C3C612 /* Sources */,
+				003257847859427F0C9D20E1C5A28584 /* Frameworks */,
+				3214F470E1B7978A55590F57CCFD7450 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79BE8370CDCE4F899CC8C5C853E5BDCF /* PBXTargetDependency */,
+			);
+			name = "Pods-NNSCANNERTests";
+			productName = Pods_NNSCANNERTests;
+			productReference = 9D959C6D197A411386FDD207BF2CF43D /* Pods-NNSCANNERTests */;
+			productType = "com.apple.product-type.framework";
+		};
+		34C49BD9807E04467F366E618FD85E84 /* Pods-NNSCANNER-NNSCANNERUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADE4BAFC587DBAD6E2601FDFF5D9EB04 /* Build configuration list for PBXNativeTarget "Pods-NNSCANNER-NNSCANNERUITests" */;
+			buildPhases = (
+				2E33B5BDB45011ABAAA670E1CDC2912F /* Headers */,
+				0920D9DD5E4A7B62F327E23CEA6AACCD /* Sources */,
+				9A18EBC7D39AAA007CE43CEE31253FFF /* Frameworks */,
+				80DA11F262E473F2AA6EABF627C82B38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-NNSCANNER-NNSCANNERUITests";
+			productName = Pods_NNSCANNER_NNSCANNERUITests;
+			productReference = 2A209FF21D3A85363E2762F2DDE0C56B /* Pods-NNSCANNER-NNSCANNERUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+		B753B10714207DA0954C5CE5F35F982F /* Pods-NNSCANNER */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0D660F4E373E26448EDBA64A8908653 /* Build configuration list for PBXNativeTarget "Pods-NNSCANNER" */;
+			buildPhases = (
+				91E67B38A39B8EE4B28650DD5341782D /* Headers */,
+				5DA5DAA812043EDBBA6FFB6517FFFA99 /* Sources */,
+				33953204EE8F1EACFC6BC529F153C3C8 /* Frameworks */,
+				FAF535098CB98CE48572941F232D7395 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-NNSCANNER";
+			productName = Pods_NNSCANNER;
+			productReference = FBAE97FF5103E7327614D60510628C1D /* Pods-NNSCANNER */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 120A2F9FB8B8B0D2AE75861FA60DB1A5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B753B10714207DA0954C5CE5F35F982F /* Pods-NNSCANNER */,
+				34C49BD9807E04467F366E618FD85E84 /* Pods-NNSCANNER-NNSCANNERUITests */,
+				1EE669CA6DB8166535CFB5BAB041F634 /* Pods-NNSCANNERTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3214F470E1B7978A55590F57CCFD7450 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80DA11F262E473F2AA6EABF627C82B38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF535098CB98CE48572941F232D7395 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0920D9DD5E4A7B62F327E23CEA6AACCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0EF72314072F0F882DF9C1B7B6D30E0 /* Pods-NNSCANNER-NNSCANNERUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42E3D5CA0AA91D9D430B7B9E27C3C612 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A778B0F72C4BC30A416CFD809F2E7EF8 /* Pods-NNSCANNERTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DA5DAA812043EDBBA6FFB6517FFFA99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1902FF96527DCDE24C7A99C68406F3E1 /* Pods-NNSCANNER-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		79BE8370CDCE4F899CC8C5C853E5BDCF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-NNSCANNER";
+			target = B753B10714207DA0954C5CE5F35F982F /* Pods-NNSCANNER */;
+			targetProxy = BA3B8C461985D9C27D53D29F0163E5C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		105C506595899CFB84D900DECD03F831 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE0198311E4296187FAC8BA49772BC6C /* Pods-NNSCANNER.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NNSCANNER/Pods-NNSCANNER-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NNSCANNER/Pods-NNSCANNER.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3CEFDE2897EF1EE2144FBA379900FDFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD7A021CCCF627838EC30F787C33376E /* Pods-NNSCANNER-NNSCANNERUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NNSCANNER-NNSCANNERUITests/Pods-NNSCANNER-NNSCANNERUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NNSCANNER-NNSCANNERUITests/Pods-NNSCANNER-NNSCANNERUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4BC7450F9457737EE3E637BA155B56F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B617AFA3DC90ABA4254BF5DA69D566D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82622EBA5547542295EB5C0D20A0E561 /* Pods-NNSCANNER-NNSCANNERUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NNSCANNER-NNSCANNERUITests/Pods-NNSCANNER-NNSCANNERUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NNSCANNER-NNSCANNERUITests/Pods-NNSCANNER-NNSCANNERUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BA08DCD643296EFCF6BAD07588D8525E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63F7E43E03511C463D5D2940912187EC /* Pods-NNSCANNERTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NNSCANNERTests/Pods-NNSCANNERTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NNSCANNERTests/Pods-NNSCANNERTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EFE89AA0923066BAA1D4615CBBA80D92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37F77EEAC06CE895B228E6DD5CFCD29E /* Pods-NNSCANNER.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NNSCANNER/Pods-NNSCANNER-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NNSCANNER/Pods-NNSCANNER.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F301BC5E942DFCD7051C7993EB4482B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA2817AFAAA9B02895F7B76141970040 /* Pods-NNSCANNERTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NNSCANNERTests/Pods-NNSCANNERTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NNSCANNERTests/Pods-NNSCANNERTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BC7450F9457737EE3E637BA155B56F7 /* Debug */,
+				8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADE4BAFC587DBAD6E2601FDFF5D9EB04 /* Build configuration list for PBXNativeTarget "Pods-NNSCANNER-NNSCANNERUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CEFDE2897EF1EE2144FBA379900FDFB /* Debug */,
+				B617AFA3DC90ABA4254BF5DA69D566D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0D660F4E373E26448EDBA64A8908653 /* Build configuration list for PBXNativeTarget "Pods-NNSCANNER" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFE89AA0923066BAA1D4615CBBA80D92 /* Debug */,
+				105C506595899CFB84D900DECD03F831 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4B657320F5288B2CF0A6A41A4E64685 /* Build configuration list for PBXNativeTarget "Pods-NNSCANNERTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F301BC5E942DFCD7051C7993EB4482B8 /* Debug */,
+				BA08DCD643296EFCF6BAD07588D8525E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
