@@ -86,13 +86,6 @@ class PreviewViewController: UIViewController {
         }
     }
 
-    @objc func deleteImage() {
-        guard let index = collectionView.indexPathsForVisibleItems.first?.item else {
-            return
-        }
-        dataImage.remove(at: index)
-        collectionView.deleteItems(at: [IndexPath(item: index, section: 0)])
-    }
 }
 
 extension PreviewViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -114,12 +107,12 @@ extension PreviewViewController: UICollectionViewDataSource, UICollectionViewDel
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "miniCell", for: indexPath) as! MiniCollectionViewCell
 
             if indexPath == currentIndexPath {
-                      cell.layer.borderWidth = 2
-                      cell.layer.borderColor = UIColor.red.cgColor
-                  } else {
-                      cell.layer.borderWidth = 0
-                      cell.layer.borderColor = UIColor.clear.cgColor
-                  }
+                cell.layer.borderWidth = 2
+                cell.layer.borderColor = UIColor.red.cgColor
+            } else {
+                cell.layer.borderWidth = 0
+                cell.layer.borderColor = UIColor.clear.cgColor
+            }
 
             cell.imageView.image = dataImage[indexPath.item]
             return cell
@@ -128,7 +121,10 @@ extension PreviewViewController: UICollectionViewDataSource, UICollectionViewDel
     }
 
     @objc func deleteImage(_ sender: UIButton) {
-        let index = sender.tag
+        guard let index = collectionView.indexPathsForVisibleItems.first?.item else {
+            return
+        }
+        //        let index = sender.tag
         guard index >= 0 && index < dataImage.count else {
             return
         }
@@ -137,11 +133,11 @@ extension PreviewViewController: UICollectionViewDataSource, UICollectionViewDel
         if (dataImage.count == 0) {
             self.navigationController?.setViewControllers([HomeTabBarViewController()], animated: true)
         }
+        self.miniCollectionView.reloadData()
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView == miniCollectionView {
             currentIndexPath = indexPath
-            self.miniCollectionView.reloadData()
             self.collectionView.scrollToItem(at:indexPath, at: .centeredHorizontally, animated: true)
         }
     }
