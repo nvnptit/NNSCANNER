@@ -40,6 +40,8 @@
 		79E6D93E29ED3BBF00530CD2 /* NNSCANNERTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E6D93D29ED3BBF00530CD2 /* NNSCANNERTests.swift */; };
 		79E6D94829ED3BBF00530CD2 /* NNSCANNERUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E6D94729ED3BBF00530CD2 /* NNSCANNERUITests.swift */; };
 		79E6D94A29ED3BBF00530CD2 /* NNSCANNERUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E6D94929ED3BBF00530CD2 /* NNSCANNERUITestsLaunchTests.swift */; };
+		79F653FA29F229E4001B2553 /* MiniCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F653F829F229E4001B2553 /* MiniCollectionViewCell.swift */; };
+		79F653FB29F229E4001B2553 /* MiniCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79F653F929F229E4001B2553 /* MiniCollectionViewCell.xib */; };
 		E3B957230FFF04274369A4B0 /* Pods_NNSCANNER.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D2BDAD5C33D085D18DBFC0 /* Pods_NNSCANNER.framework */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +100,8 @@
 		79E6D94329ED3BBF00530CD2 /* NNSCANNERUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NNSCANNERUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79E6D94729ED3BBF00530CD2 /* NNSCANNERUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NNSCANNERUITests.swift; sourceTree = "<group>"; };
 		79E6D94929ED3BBF00530CD2 /* NNSCANNERUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NNSCANNERUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		79F653F829F229E4001B2553 /* MiniCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniCollectionViewCell.swift; sourceTree = "<group>"; };
+		79F653F929F229E4001B2553 /* MiniCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MiniCollectionViewCell.xib; sourceTree = "<group>"; };
 		813B402C67CCD02CADDF377E /* Pods-NNSCANNER-NNSCANNERUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NNSCANNER-NNSCANNERUITests.debug.xcconfig"; path = "Target Support Files/Pods-NNSCANNER-NNSCANNERUITests/Pods-NNSCANNER-NNSCANNERUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BEA88D0802DD027C438B99D2 /* Pods-NNSCANNERTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NNSCANNERTests.release.xcconfig"; path = "Target Support Files/Pods-NNSCANNERTests/Pods-NNSCANNERTests.release.xcconfig"; sourceTree = "<group>"; };
 		D96D7388E1139B445C57737B /* Pods-NNSCANNER.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NNSCANNER.release.xcconfig"; path = "Target Support Files/Pods-NNSCANNER/Pods-NNSCANNER.release.xcconfig"; sourceTree = "<group>"; };
@@ -231,6 +235,7 @@
 		79CDF27529F197C400269584 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				79F653F729F229CD001B2553 /* Mini */,
 				79CDF27129F197BF00269584 /* PreviewCollectionViewCell.swift */,
 				79CDF27229F197BF00269584 /* PreviewCollectionViewCell.xib */,
 			);
@@ -360,6 +365,15 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		79F653F729F229CD001B2553 /* Mini */ = {
+			isa = PBXGroup;
+			children = (
+				79F653F829F229E4001B2553 /* MiniCollectionViewCell.swift */,
+				79F653F929F229E4001B2553 /* MiniCollectionViewCell.xib */,
+			);
+			path = Mini;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -480,6 +494,7 @@
 				79E465CE29EEE52800A42D2E /* PDFTableViewCell.xib in Resources */,
 				79CDF27429F197BF00269584 /* PreviewCollectionViewCell.xib in Resources */,
 				795C21BB29ED7D7A00700E21 /* HomeViewController.xib in Resources */,
+				79F653FB29F229E4001B2553 /* MiniCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,6 +595,7 @@
 				795C2B6429EE4B7C003A8B1D /* CGSize.swift in Sources */,
 				795C2B6029EE4069003A8B1D /* ExportViewController.swift in Sources */,
 				7908066529F05B47008D3845 /* HomeView+PDFKit.swift in Sources */,
+				79F653FA29F229E4001B2553 /* MiniCollectionViewCell.swift in Sources */,
 				79E465CD29EEE52800A42D2E /* PDFTableViewCell.swift in Sources */,
 				79E6D92729ED3BBE00530CD2 /* AppDelegate.swift in Sources */,
 				79CDF27929F1AD4300269584 /* UIView.swift in Sources */,

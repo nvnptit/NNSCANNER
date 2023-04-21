@@ -40,6 +40,7 @@ extension ScanViewController: UIImagePickerControllerDelegate, UINavigationContr
         picker.dismiss(animated: true)
         guard let image = info[.originalImage] as? UIImage else { return }
         let scannerViewController = ImageScannerController(image: image, delegate: self)
+        scannerViewController.navigationBar.tintColor = .white
         present(scannerViewController, animated: true)
     }
 }
