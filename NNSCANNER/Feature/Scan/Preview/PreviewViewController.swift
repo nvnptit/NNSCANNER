@@ -28,20 +28,21 @@ class PreviewViewController: UIViewController {
         // Cấu hình layout cho UICollectionView
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
-        layout.minimumInteritemSpacing = 16
+        layout.minimumLineSpacing = 0
+        layout.minimumInteritemSpacing = 0
 
-        let navigationBarHeight = navigationController?.navigationBar.bounds.height ?? 0
+        let margin = 16
+        let collectionViewWidth = UIScreen.main.bounds.width
+        let collectionViewHeight = UIScreen.main.bounds.height - CGFloat((2 * margin))
+
         let safeAreaInsets = view.safeAreaInsets
-        let margin: CGFloat = 16
+        let cellWidth = collectionViewWidth - safeAreaInsets.left - safeAreaInsets.right
+        let cellHeight = collectionViewHeight - safeAreaInsets.top - safeAreaInsets.bottom - 32 // subtract an additional 16 from top and bottom
 
-        let width = UIScreen.main.bounds.width - safeAreaInsets.left - safeAreaInsets.right - 2 * margin
-        let height = UIScreen.main.bounds.height - safeAreaInsets.top - navigationBarHeight - 0.25 * navigationBarHeight - safeAreaInsets.bottom - 2 * margin
-
-        layout.itemSize = CGSize(width: width, height: height)
-        layout.sectionInset = UIEdgeInsets(top: safeAreaInsets.top + margin, left: margin, bottom: margin, right:  margin)
-
-        // Thiết lập layout cho UICollectionView
+        layout.itemSize = CGSize(width: cellWidth, height: cellHeight)
+        layout.sectionInset = UIEdgeInsets(top: safeAreaInsets.top, left: safeAreaInsets.left, bottom: safeAreaInsets.bottom , right: safeAreaInsets.right)
         collectionView.collectionViewLayout = layout
+
     }
     @IBAction func didTapExportPDF(_ sender: UIButton, forEvent event: UIEvent) {
             convertImageToData()
